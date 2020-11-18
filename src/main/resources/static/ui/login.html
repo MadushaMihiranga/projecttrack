@@ -2,21 +2,118 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="icon" href="../resources/icon/logo.png">
     <title>Project Track</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js" integrity="sha512-dqw6X88iGgZlTsONxZK9ePmJEFrmHwpuMrsUChjAw1mRUhUITE5QU9pkcSox+ynfLhL15Sv2al5A0LVyDCmtUw==" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css" integrity="sha512-8bHTC73gkZ7rZ7vpqUQThUDhqcNFyYi2xgDgPDHc+GXVGHXq+xPjynxIopALmOPqzo9JZj0k6OqqewdGO3EsrQ==" crossorigin="anonymous" />
 
-</head>
-<body>
-<h1>hello</h1>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/fontawesome.min.css" integrity="sha512-8jdwayz5n8F2cnW26l9vpV6+yGOcRAqz6HTu+DQ3FtVIAts2gTdlFZOGpYhvBMXkWEgxPN3Y22UWyZXuDowNLA==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/regular.min.css" integrity="sha512-qgtcTTDJDk6Fs9eNeN1tnuQwYjhnrJ8wdTVxJpUTkeafKKP6vprqRx5Sj/rB7Q57hoYDbZdtHR4krNZ/11zONg==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/solid.min.css" integrity="sha512-QN7X/bUbbeel9bbq6JVNJXk1Zowt+n+QPN+DjhEmTa4TdL1YPCsCey5JrvfRW8xp28LDYgGG/waNVdrhwMQmVQ==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/v4-shims.min.css" integrity="sha512-njWvXjJPMYfvYHb2DAnEL0MS5KEmoIeZVdpK7tpxiApoL3ZoUzHSvkoSFrbASdTuIHnEVG+Ko+ES/DXKygBH4g==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/svg-with-js.min.css" integrity="sha512-gX1L9ovb6aHWz/bJYE364vKdGBDOeZLMt168kVRpRdo2I2TpveBJpbDzHMZQWy8liTTG7Qm9Onl1Ji92Eo3x7Q==" crossorigin="anonymous" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/js/brands.min.js" integrity="sha512-lFwtJUcrYHDi7C0sfttJF03X9NJ2JU2fwecdDOrf3exNabkIQshjhLmBuDAk/pKuJW0x32Ity99G/B2be9X/wA==" crossorigin="anonymous"></script>
 
-<div class="ui input error">
-    <input type="text" placeholder="Search...">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap" rel="stylesheet">
+
+    <style>
+        .loginInput{
+            border: 1px solid #16A596!important;
+        }
+        .loginInputGroup{
+            margin: 15px;
+        }
+
+        .signinButton{
+            background-color: #16A596!important;
+            color: #FFF!important;
+            margin: 0!important;
+        }
+
+        .signupButton{
+            border: 1px solid #16A596!important;
+        }
+
+
+        body, html {
+            height: 100%;
+            margin: 0;
+        }
+        .background {
+            background-image: url("../resources/images/login-background.png");
+            height: 100%;
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            /*filter: blur(8px);*/
+            z-index: 1;
+        }
+
+    </style>
+
+</head>
+<body class="background">
+<!--<div align="center" class="background" style="padding-top: 150px" >-->
+<div class="ui container" style="padding: 30px">
+    <!--<div align="center" class="background" style="padding-top: 150px" >-->
+    <h1 style="font-family: 'Comfortaa', cursive;color: #16A596;text-align: center;margin: 45px">
+        <i class="fas fa-clipboard-list"></i>
+        Project Track</h1>
+    <div class="ui card" style="margin: auto;width: 400px;text-align: center;padding: 30px">
+        <div class="content">
+            <p style="font-family: 'Comfortaa', cursive;font-size: 17px">Log in to your account</p>
+        </div>
+        <form>
+            <div class="ui fluid icon input loginInputGroup">
+                <input id="username" class="loginInput" type="text" placeholder="username">
+                <i style="color:#16A596;" class="user outline icon"></i>
+            </div>
+            <div class="ui fluid icon input loginInputGroup">
+                <input id="password" class="loginInput" type="password" placeholder="password">
+                <i style="color:#16A596;" class="user outline icon"></i>
+            </div>
+            <div class="ui fluid icon input loginInputGroup">
+                <button type="submit" class="fluid ui button signinButton">Continue</button>
+            </div>
+            <a style="color: #16A596">Forgot your password?</a>
+        </form>
+        <div class="ui horizontal divider">
+            Or
+        </div>
+        <div class="ui fluid icon input loginInputGroup">
+            <button style="color: #16A596!important;" class="fluid ui basic button signupButton">
+                Sign up
+            </button>
+        </div>
+    </div>
+
+    <div style="margin-top: 45px">
+        <div class="ui horizontal divider" style="width: 400px;margin:auto">
+            Project Track
+        </div>
+        <div style="text-align: center;margin-top: 30px">
+            <p style="margin: 5px;color: rgba(0,0,0,0.5)">Create by</p>
+            <a href="https://github.com/MadushaMihiranga" target="_blank"  style="margin: 5px;color: #16A596">Madusha Mihiranga</a>
+            <p style="margin: 5px;color: rgba(0,0,0,0.5)">2020-11</p>
+        </div>
+
+
+    </div>
+
+
 </div>
-<div class="ui icon input">
-    <input type="text" placeholder="Search...">
-    <i class="inverted circular search link icon"></i>
-</div>
+
+
+
+
+
+
+<!---->
+
+
 </body>
 </html>
