@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="icon" href="../resources/icon/logo.png">
+    <link rel="icon" href="../resources/icon/logo-r.png">
     <title>Project Track | Sign up</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js" integrity="sha512-dqw6X88iGgZlTsONxZK9ePmJEFrmHwpuMrsUChjAw1mRUhUITE5QU9pkcSox+ynfLhL15Sv2al5A0LVyDCmtUw==" crossorigin="anonymous"></script>
@@ -28,12 +28,111 @@
         .full-height {
             height: max-content;
         }
+
+        .loginInput {
+            border: 1px solid #16A596 !important;
+        }
+
+        .loginInputGroup {
+            margin: 15px;
+        }
+
+        .signinButton {
+            background-color: #16A596 !important;
+            color: #FFF !important;
+            margin: 0 !important;
+        }
+
+        .signupButton {
+            border: 1px solid #16A596 !important;
+        }
+
+        .background {
+            background-image: url("../resources/images/sipnup-background-transparent.png");
+            height: 100%;
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            /*filter: blur(8px);*/
+            z-index: 1;
+        }
     </style>
 </head>
-<body>
-<div class="ui grid">
-    <div class="five wide column full-height" style="background-color: #16A596"></div>
-    <div class="eleven wide column" style="height: 500px"></div>
-</div>
+<body class="background">
+
+    <div class="ui grid">
+        <div class="five wide column">
+
+            <p style="font-family: 'Comfortaa', cursive;color: #fff;text-align: center;margin: 100px 45px 45px 45px;font-size: 50px">
+                <img src="../resources/icon/logo-white.png" style="width: 45px;height:45px">
+                Project Track
+            </p>
+
+            <p style="font-family: 'Comfortaa', cursive;color: #fff;text-align: center;margin: 45px;font-size: 20px">
+                Project Track can be used to a wide range of industries for
+                project planning resource allocation and scheduling.
+                <br>It enables project managers as well as entire teams to
+                control their budget, quality management and
+                all documentation exchanged throughout a project.
+            </p>
+
+            <div style="margin-top: 45px">
+                <div class="ui horizontal inverted divider" style="width: 400px;margin:auto;">Project Track</div>
+                <div style="text-align: center;margin-top: 30px">
+                    <p style="margin: 5px;color: rgba(0,0,0,0.5)">Create by</p>
+                    <a href="https://github.com/MadushaMihiranga" target="_blank" style="margin: 5px;color: #fff">Madusha Mihiranga</a>
+                    <p style="margin: 5px;color: rgba(0,0,0,0.5)">2020-11</p>
+                </div>
+            </div>
+
+        </div>
+        <div class="one wide column">
+            <div class="ui segment">
+
+            </div>
+        </div>
+
+        <div class="ten wide column" style="padding-top: 100px">
+            <div class="ui card" style="margin: auto;width: 760px;text-align: center;padding: 30px">
+                <div class="content">
+                    <p style="font-family: 'Comfortaa', cursive;font-size: 17px">Create Your account</p>
+                    <form>
+
+                        <div class="ui grid">
+                            <div class="eight wide column">
+                                <div class="ui fluid icon input loginInputGroup">
+                                    <input class="loginInput" type="text" placeholder="username" required>
+                                </div>
+                            </div>
+                            <div class="eight wide column">
+                                <div class="ui fluid icon input loginInputGroup">
+                                    <input  class="loginInput" type="password" placeholder="password" required>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <div class="ui fluid icon input loginInputGroup">
+                        <button type="submit" class="fluid ui button signinButton">Sign in</button>
+                        </div>
+                        <a style="color: #16A596">Forgot your password?</a>
+                    </form>
+                    <div class="ui horizontal divider">
+                        Or
+                    </div>
+                    <div class="ui fluid icon input loginInputGroup">
+                        <button style="color: #16A596!important;" class="fluid ui basic button signupButton">
+                            Sign up
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
 </body>
 </html>
