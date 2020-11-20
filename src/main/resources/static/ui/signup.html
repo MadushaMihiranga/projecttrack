@@ -16,9 +16,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/svg-with-js.min.css" integrity="sha512-gX1L9ovb6aHWz/bJYE364vKdGBDOeZLMt168kVRpRdo2I2TpveBJpbDzHMZQWy8liTTG7Qm9Onl1Ji92Eo3x7Q==" crossorigin="anonymous"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/js/brands.min.js" integrity="sha512-lFwtJUcrYHDi7C0sfttJF03X9NJ2JU2fwecdDOrf3exNabkIQshjhLmBuDAk/pKuJW0x32Ity99G/B2be9X/wA==" crossorigin="anonymous"></script>
 
-
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap" rel="stylesheet">
+
+    <script src="../resources/script/common.js"></script>
+    <script src="../resources/script/ui-components.js"></script>
 
     <style>
         html, body {
@@ -87,52 +89,90 @@
 
         </div>
         <div class="one wide column">
-            <div class="ui segment">
 
-            </div>
         </div>
 
         <div class="ten wide column" style="padding-top: 100px">
-            <div class="ui card" style="margin: auto;width: 760px;text-align: center;padding: 30px">
+
+
+
+            <div class="ui card" style="margin: auto;width: 400px;text-align: center;padding: 30px">
                 <div class="content">
                     <p style="font-family: 'Comfortaa', cursive;font-size: 17px">Create Your account</p>
-                    <form>
+                </div>
+                <form>
+                    <div class="ui fluid icon input loginInputGroup">
+                        <input id="username" class="loginInput" type="text" placeholder="Username" required>
+                    </div>
+                    <div class="ui fluid icon input loginInputGroup">
+                        <input id="email" class="loginInput" type="email" placeholder="Email" required>
+                    </div>
+                    <div class="ui fluid icon input loginInputGroup">
+                        <input id="password" class="loginInput" type="password" placeholder="password" required>
+                    </div>
+
+                    <div class="field">
+                        <div class="ui checkbox">
+                            <input type="checkbox" tabindex="0" class="hidden">
+                            <label>I agree to the Terms and Conditions</label>
+                        </div>
+                    </div>
+
+                    <div class="ui fluid icon input loginInputGroup">
+                        <button type="submit" class="fluid ui button signinButton">Sign up</button>
+                    </div>
+
+                </form>
+                <div class="ui horizontal divider">
+                    Or
+                </div>
+                <p style="margin-bottom: 0;color: #535353">Already have an account?</p>
+                <div class="ui fluid icon input loginInputGroup">
+                    <button style="color: #16A596!important;" class="fluid ui basic button signupButton">
+                        Sign in
+                    </button>
+                </div>
+            </div>
+
+<!--            <div class="ui card" style="margin: auto;width: 760px;text-align: center;padding: 30px">
+                <div class="content">
+                    <p style="font-family: 'Comfortaa', cursive;font-size: 20px">Create Your account</p>
+                    <form id="signupForm" class="ui form" style="text-align: left">
 
                         <div class="ui grid">
-                            <div class="eight wide column">
-                                <div class="ui fluid icon input loginInputGroup">
-                                    <input class="loginInput" type="text" placeholder="username" required>
-                                </div>
-                            </div>
-                            <div class="eight wide column">
-                                <div class="ui fluid icon input loginInputGroup">
-                                    <input  class="loginInput" type="password" placeholder="password" required>
-                                </div>
+                            <div id="signupFormColOne" class="eight wide column"></div>
+                            <div id="signupFormColTwo" class="eight wide column">
+
                             </div>
                         </div>
 
+                        <div class="ui grid">
+                            <div  class="eight wide column">
+                                <p style='color: #ff6666;font-size: 11px;margin-bottom: 30px'><i class="fas fa-asterisk" ></i> Required Fields</p>
+                                <button type="submit" class="fluid ui button signinButton">Sign in</button>
+                            </div>
 
+                        </div>
 
                         <div class="ui fluid icon input loginInputGroup">
-                        <button type="submit" class="fluid ui button signinButton">Sign in</button>
+
                         </div>
-                        <a style="color: #16A596">Forgot your password?</a>
+
                     </form>
                     <div class="ui horizontal divider">
                         Or
                     </div>
                     <div class="ui fluid icon input loginInputGroup">
-                        <button style="color: #16A596!important;" class="fluid ui basic button signupButton">
-                            Sign up
-                        </button>
+
                     </div>
                 </div>
-            </div>
+            </div>-->
         </div>
 
     </div>
 
-
-
+<script>
+    $('.ui.checkbox').checkbox();
+</script>
 </body>
 </html>
